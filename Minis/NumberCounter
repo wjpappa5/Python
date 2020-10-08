@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Oct  8 11:21:56 2020
+
+@author: williampappas
+"""
+
+play = "y"
+start = 0
+while play == "y":
+    input_number = input("How many numbers? ")  
+    for x in range(start, int(input_number) + start):
+        print(x)
+    start = start + int(input_number)
+    play = input("Continue? (y)es or (n)o? ")
+         
+    
